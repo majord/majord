@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120217223001) do
+ActiveRecord::Schema.define(:version => 20120703021111) do
 
   create_table "blurbs", :force => true do |t|
     t.integer  "major_id"
@@ -23,19 +23,10 @@ ActiveRecord::Schema.define(:version => 20120217223001) do
     t.datetime "updated_at"
   end
 
-  create_table "majors", :force => true do |t|
-    t.string   "name"
-    t.integer  "school_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "majors" because of following StandardError
+#   Unknown type 'bool' for column 'approved'
 
-  create_table "schools", :force => true do |t|
-    t.string   "name"
-    t.string   "location"
-    t.string   "size"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "schools" because of following StandardError
+#   Unknown type 'bool' for column 'approved'
 
 end
