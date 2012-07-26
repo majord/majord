@@ -1,5 +1,37 @@
-div.content
+
+a
 {
+    text-decoration: none;
+}
+
+#navigation
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+
+
+.introduction
+{
+    background-color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: white;
+    padding: 20px;
+}
+
+#footer
+{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
