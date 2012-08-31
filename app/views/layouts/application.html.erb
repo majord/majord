@@ -3,17 +3,29 @@
 <head>
   <title>Majord</title>
   <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "navigation" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <div id ="navigation">
-  <%= link_to("Add your school", new_school_path)%>
-  </div>
+ 
 </head>
 <body>
+
+<div id = "wrapper">
+
+  <div id = "navigation">
+  
+   <div id = "title"> major'd</div>
+  <%= link_to("Add your School", new_school_path) %>
+  <%= link_to("Dummy Link 1", new_school_path) %>
+  <%= link_to("Dummy Link 2", new_school_path) %>
+  <%= link_to("Dummy Link 3", new_school_path) %> 
+  </div>
+    
 
 <%= yield %>
 
 <%= render "shared/footer" %>
+</div>
 </body>
 </html>
